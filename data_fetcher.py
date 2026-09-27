@@ -23,7 +23,7 @@ LOCATIONS = [
 ]
 
 def get_coordinates(city):
-    """Fetch latitude and longitude using Nominatim API."""
+    # Fetch latitude and longitude using Nominatim API.
     url = f"https://nominatim.openstreetmap.org/search?format=json&q={city}"
     headers = {'User-Agent': 'CS411-Search-Visualizer-App'}
     response = requests.get(url, headers=headers)
@@ -34,7 +34,7 @@ def get_coordinates(city):
     return None, None
 
 def get_driving_distance(coord1, coord2):
-    """Fetch driving distance in meters using OSRM API."""
+    # Fetch driving distance in meters using OSRM API.
     # OSRM expects longitude,latitude
     url = f"http://router.project-osrm.org/route/v1/driving/{coord1[1]},{coord1[0]};{coord2[1]},{coord2[0]}?overview=false"
     response = requests.get(url)
