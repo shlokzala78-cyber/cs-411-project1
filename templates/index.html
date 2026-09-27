@@ -116,16 +116,18 @@
     let markers = [];
 
     // Draw background graph network
-    Object.keys(graphData.graph).forEach(node => {
-        const loc1 = graphData.locations[node];
+    Object.keys(graphData.nodes).forEach(node => {
+        const loc1 = graphData.nodes[node];
         L.circleMarker([loc1.lat, loc1.lon], {radius: 5, color: '#007BFF', fillColor: '#007BFF', fillOpacity: 1})
          .addTo(map)
          .bindTooltip(node);
         
-        Object.keys(graphData.graph[node]).forEach(neighbor => {
-            const loc2 = graphData.locations[neighbor];
-            L.polyline([[loc1.lat, loc1.lon], [loc2.lat, loc2.lon]], {color: 'grey', weight: 2, opacity: 0.6}).addTo(map);
-        });
+        if (graphData.edges[node]) {
+            Object.keys(graphData.edges[node]).forEach(neighbor => {
+                const loc2 = graphData.nodes[neighbor];
+                L.polyline([[loc1.lat, loc1.lon], [loc2.lat, loc2.lon]], {color: 'grey', weight: 2, opacity: 0.6}).addTo(map);
+            });
+        }
     });
 
     async function runSearch() {
