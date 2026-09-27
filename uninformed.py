@@ -6,7 +6,7 @@ from collections import deque
 import heapq
 
 def bfs(graph, start, goal):
-    """Breadth-First Search using a FIFO queue."""
+    # Breadth-First Search using a FIFO queue.
     queue = deque([(start, [start], 0)])
     visited = {start}
     expanded = 0
@@ -26,7 +26,7 @@ def bfs(graph, start, goal):
     return None, 0, expanded
 
 def dfs(graph, start, goal):
-    """Depth-First Search using a LIFO stack."""
+    # Depth-First Search using a LIFO stack.
     stack = [(start, [start], 0)]
     visited = set()
     expanded = 0
@@ -48,7 +48,7 @@ def dfs(graph, start, goal):
     return None, 0, expanded
 
 def ucs(graph, start, goal):
-    """Uniform-Cost Search using a priority queue (min-heap) based on path cost."""
+    # Uniform-Cost Search using a priority queue (min-heap) based on path cost.
     pq = [(0, start, [start])]
     visited = set()
     expanded = 0
@@ -70,7 +70,7 @@ def ucs(graph, start, goal):
     return None, 0, expanded
 
 def ids(graph, start, goal, max_depth=50):
-    """Iterative Deepening Search combining DFS space efficiency with BFS completeness."""
+    # IDS combining DFS space efficiency with BFS completeness.
     def dls(node, path, cost, depth, visited):
         nonlocal expanded
         expanded += 1
