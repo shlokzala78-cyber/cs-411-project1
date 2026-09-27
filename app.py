@@ -13,27 +13,50 @@ app = Flask(__name__)
 with open('map_data.json', 'r') as f:
     graph = json.load(f)
 
-# Concept notes mapped to algorithms
+# Concept notes updated to dictionaries for structured card rendering
 CONCEPT_NOTES = {
-    'bfs': "Main Idea: Explores evenly level by level. Node Selection: FIFO (Queue), choosing the shallowest unexpanded node. Information Used: Depth only.",
-    'dfs': "Main Idea: Dives as deep as possible before backtracking. Node Selection: LIFO (Stack), choosing the deepest unexpanded node. Information Used: Depth only.",
-    'ucs': "Main Idea: Finds the cheapest path. Node Selection: Priority Queue based on lowest accumulated path cost g(n). Information Used: Path cost only.",
-    'ids': "Main Idea: Combines BFS completeness with DFS space efficiency. Node Selection: Repeated DLS with increasing depth limits. Information Used: Depth only.",
-    'greedy': "Main Idea: Rushes toward the goal blindly. Node Selection: Priority Queue based solely on heuristic distance h(n) to goal. Information Used: Heuristic only.",
-    'astar': "Main Idea: Balances path cost and goal proximity for optimal routing. Node Selection: Priority Queue based on f(n) = g(n) + h(n). Information Used: Path cost and heuristic."
+    'bfs': {
+        'main_idea': "Explores evenly level by level.",
+        'node_selection': "FIFO (Queue), choosing the shallowest unexpanded node.",
+        'info_used': "Depth only."
+    },
+    'dfs': {
+        'main_idea': "Dives as deep as possible before backtracking.",
+        'node_selection': "LIFO (Stack), choosing the deepest unexpanded node.",
+        'info_used': "Depth only."
+    },
+    'ucs': {
+        'main_idea': "Finds the cheapest path by expanding the lowest cost node.",
+        'node_selection': "Priority Queue based on lowest accumulated path cost g(n).",
+        'info_used': "Actual cost g(n) only."
+    },
+    'ids': {
+        'main_idea': "Combines BFS completeness with DFS space efficiency.",
+        'node_selection': "Repeated DLS with increasing depth limits.",
+        'info_used': "Depth only."
+    },
+    'greedy': {
+        'main_idea': "Rushes toward the goal blindly based on estimated proximity.",
+        'node_selection': "Priority Queue based solely on heuristic distance h(n) to goal.",
+        'info_used': "Heuristic estimate h(n) only."
+    },
+    'astar': {
+        'main_idea': "Finds the shortest path balancing actual cost g(n) and estimated cost h(n).",
+        'node_selection': "Selects node with minimum f(n) = g(n) + h(n).",
+        'info_used': "Actual cost g(n) and heuristic estimate h(n)."
+    }
 }
 
 @app.route('/')
 def index():
-    nodes = list(graph['nodes'].keys())
-    return render_template('index.html', nodes=nodes)
+    nodes = list(graph['locations'].keys())
+    return render_template('index.html', nodes=nodes, graph_data=graph)
 
 @app.route('/search', methods=['POST'])
 def search():
     data = request.json
     start, goal, algo = data['source'], data['destination'], data['algorithm']
     
-    # Route to appropriate algorithm
     algo_map = {
         'bfs': uninformed.bfs,
         'dfs': uninformed.dfs,
@@ -51,8 +74,7 @@ def search():
     if not path:
         return jsonify({"error": "No path found."})
         
-    # Build coordinate array for the frontend map polyline
-    path_coords = [{"lat": graph['nodes'][node]['lat'], "lon": graph['nodes'][node]['lon']} for node in path]
+    path_coords = [{"lat": graph['locations'][node]['lat'], "lon": graph['locations'][node]['lon']} for node in path]
     
     return jsonify({
         "path": path,
