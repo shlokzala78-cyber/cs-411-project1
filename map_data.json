@@ -8,18 +8,6 @@
             "lat": 42.0470043,
             "lon": -87.6846053
         },
-        "Skokie, IL": {
-            "lat": 42.0262972,
-            "lon": -87.7521069
-        },
-        "Des Plaines, IL": {
-            "lat": 42.0415823,
-            "lon": -87.8873916
-        },
-        "Rosemont, IL": {
-            "lat": 41.9941334,
-            "lon": -87.8756737
-        },
         "Oak Park, IL": {
             "lat": 41.8878145,
             "lon": -87.7887615
@@ -28,21 +16,61 @@
             "lat": 41.8455398,
             "lon": -87.7540199
         },
-        "Berwyn, IL": {
-            "lat": 41.8505874,
-            "lon": -87.7936685
+        "Oak Lawn, IL": {
+            "lat": 41.7108662,
+            "lon": -87.7581081
         },
-        "Elmhurst, IL": {
-            "lat": 41.8994745,
-            "lon": -87.9403418
+        "Des Plaines, IL": {
+            "lat": 42.0415823,
+            "lon": -87.8873916
         },
-        "Lombard, IL": {
-            "lat": 41.8864687,
-            "lon": -88.0201536
+        "Arlington Heights, IL": {
+            "lat": 42.0811563,
+            "lon": -87.9802164
         },
-        "Downers Grove, IL": {
-            "lat": 41.7936822,
-            "lon": -88.0102281
+        "Schaumburg, IL": {
+            "lat": 42.0333608,
+            "lon": -88.083406
+        },
+        "Elk Grove Village, IL": {
+            "lat": 42.0035588,
+            "lon": -88.0037711
+        },
+        "Palatine, IL": {
+            "lat": 42.1105502,
+            "lon": -88.0434304
+        },
+        "Glenview, IL": {
+            "lat": 42.0700662,
+            "lon": -87.8114044
+        },
+        "Northbrook, IL": {
+            "lat": 42.128704,
+            "lon": -87.8265089
+        },
+        "Highland Park, IL": {
+            "lat": 42.1836719,
+            "lon": -87.7993245
+        },
+        "Waukegan, IL": {
+            "lat": 42.3602273,
+            "lon": -87.8318164
+        },
+        "Gurnee, IL": {
+            "lat": 42.3702996,
+            "lon": -87.9020186
+        },
+        "Libertyville, IL": {
+            "lat": 42.2830786,
+            "lon": -87.9531303
+        },
+        "Mundelein, IL": {
+            "lat": 42.263079,
+            "lon": -88.0039653
+        },
+        "Vernon Hills, IL": {
+            "lat": 42.2373152,
+            "lon": -87.9649487
         },
         "Naperville, IL": {
             "lat": 41.7728699,
@@ -52,135 +80,139 @@
             "lat": 41.7571701,
             "lon": -88.3147539
         },
-        "Joliet, IL": {
-            "lat": 41.5263603,
-            "lon": -88.0840212
+        "Wheaton, IL": {
+            "lat": 41.8646959,
+            "lon": -88.1101709
         },
-        "Orland Park, IL": {
-            "lat": 41.630663,
-            "lon": -87.8536288
-        },
-        "Tinley Park, IL": {
-            "lat": 41.5733669,
-            "lon": -87.7844944
-        },
-        "Oak Lawn, IL": {
-            "lat": 41.7108662,
-            "lon": -87.7581081
-        },
-        "Schaumburg, IL": {
-            "lat": 42.0333608,
-            "lon": -88.083406
-        },
-        "Elgin, IL": {
-            "lat": 42.03726,
-            "lon": -88.2810994
-        },
-        "Waukegan, IL": {
-            "lat": 42.3602273,
-            "lon": -87.8318164
+        "Downers Grove, IL": {
+            "lat": 41.7936822,
+            "lon": -88.0102281
         }
     },
     "edges": {
         "Chicago, IL": {
-            "Evanston, IL": 22699,
-            "Skokie, IL": 23140,
-            "Des Plaines, IL": 32342.1
+            "Cicero, IL": 8.76,
+            "Oak Park, IL": 9.89,
+            "Evanston, IL": 14.1,
+            "Oak Lawn, IL": 16.89
         },
         "Evanston, IL": {
-            "Skokie, IL": 8017,
-            "Des Plaines, IL": 19394.1,
-            "Rosemont, IL": 20749.8
-        },
-        "Skokie, IL": {
-            "Des Plaines, IL": 11903.3,
-            "Rosemont, IL": 12916.1,
-            "Oak Park, IL": 20283.9
-        },
-        "Des Plaines, IL": {
-            "Rosemont, IL": 6516.9,
-            "Oak Park, IL": 22107.9,
-            "Cicero, IL": 39226.9
-        },
-        "Rosemont, IL": {
-            "Oak Park, IL": 17553.6,
-            "Cicero, IL": 25032.6,
-            "Berwyn, IL": 21117.8
+            "Chicago, IL": 14.1,
+            "Glenview, IL": 7.96,
+            "Northbrook, IL": 11.7,
+            "Highland Park, IL": 14.06
         },
         "Oak Park, IL": {
-            "Cicero, IL": 7635.8,
-            "Berwyn, IL": 4567.9,
-            "Elmhurst, IL": 16969.5
+            "Chicago, IL": 9.89,
+            "Cicero, IL": 4.74,
+            "Oak Lawn, IL": 15.47
         },
         "Cicero, IL": {
-            "Berwyn, IL": 3915.1,
-            "Elmhurst, IL": 21262.5,
-            "Lombard, IL": 27115.5
-        },
-        "Berwyn, IL": {
-            "Elmhurst, IL": 17257.1,
-            "Lombard, IL": 23110.2,
-            "Downers Grove, IL": 23054.3
-        },
-        "Elmhurst, IL": {
-            "Lombard, IL": 8105,
-            "Downers Grove, IL": 17145.4,
-            "Naperville, IL": 28148.1
-        },
-        "Lombard, IL": {
-            "Downers Grove, IL": 11094.3,
-            "Naperville, IL": 20974.4,
-            "Aurora, IL": 38273.4
-        },
-        "Downers Grove, IL": {
-            "Naperville, IL": 12310.9,
-            "Aurora, IL": 27030.7,
-            "Joliet, IL": 40891.9
-        },
-        "Naperville, IL": {
-            "Aurora, IL": 14975.6,
-            "Joliet, IL": 30984.8,
-            "Orland Park, IL": 39047.9
-        },
-        "Aurora, IL": {
-            "Joliet, IL": 36182.8,
-            "Orland Park, IL": 53212.5,
-            "Tinley Park, IL": 69770.7
-        },
-        "Joliet, IL": {
-            "Orland Park, IL": 31697.2,
-            "Tinley Park, IL": 31539.4,
-            "Oak Lawn, IL": 49755.3
-        },
-        "Orland Park, IL": {
-            "Tinley Park, IL": 12258.1,
-            "Oak Lawn, IL": 15373.1,
-            "Schaumburg, IL": 60397.5
-        },
-        "Tinley Park, IL": {
-            "Oak Lawn, IL": 19920.1,
-            "Schaumburg, IL": 69054.7,
-            "Elgin, IL": 81979.2
+            "Chicago, IL": 8.76,
+            "Oak Park, IL": 4.74,
+            "Oak Lawn, IL": 10.73
         },
         "Oak Lawn, IL": {
-            "Schaumburg, IL": 56003.6,
-            "Elgin, IL": 68928.2,
-            "Waukegan, IL": 91093.9
+            "Oak Park, IL": 15.47,
+            "Cicero, IL": 10.73,
+            "Chicago, IL": 16.89
+        },
+        "Des Plaines, IL": {
+            "Glenview, IL": 6.55,
+            "Arlington Heights, IL": 5.76,
+            "Northbrook, IL": 9.58,
+            "Highland Park, IL": 15.61
+        },
+        "Arlington Heights, IL": {
+            "Des Plaines, IL": 5.76,
+            "Palatine, IL": 4.07,
+            "Elk Grove Village, IL": 5.81,
+            "Schaumburg, IL": 8.35
         },
         "Schaumburg, IL": {
-            "Elgin, IL": 23327.8,
-            "Waukegan, IL": 62043.5,
-            "Chicago, IL": 51397
+            "Elk Grove Village, IL": 7.0,
+            "Palatine, IL": 7.24,
+            "Arlington Heights, IL": 8.35,
+            "Wheaton, IL": 13.16
         },
-        "Elgin, IL": {
-            "Waukegan, IL": 66036.6,
-            "Chicago, IL": 65951.7,
-            "Evanston, IL": 54792.1
+        "Elk Grove Village, IL": {
+            "Arlington Heights, IL": 5.81,
+            "Schaumburg, IL": 7.0,
+            "Palatine, IL": 9.53,
+            "Downers Grove, IL": 17.14
+        },
+        "Palatine, IL": {
+            "Arlington Heights, IL": 4.07,
+            "Schaumburg, IL": 7.24,
+            "Elk Grove Village, IL": 9.53
+        },
+        "Glenview, IL": {
+            "Evanston, IL": 7.96,
+            "Des Plaines, IL": 6.55,
+            "Northbrook, IL": 5.52,
+            "Highland Park, IL": 12.4
+        },
+        "Northbrook, IL": {
+            "Evanston, IL": 11.7,
+            "Des Plaines, IL": 9.58,
+            "Glenview, IL": 5.52,
+            "Highland Park, IL": 6.24
+        },
+        "Highland Park, IL": {
+            "Evanston, IL": 14.06,
+            "Glenview, IL": 12.4,
+            "Northbrook, IL": 6.24,
+            "Des Plaines, IL": 15.61,
+            "Waukegan, IL": 13.55
         },
         "Waukegan, IL": {
-            "Chicago, IL": 66166.4,
-            "Evanston, IL": 45496.3,
-            "Skokie, IL": 44323.8
+            "Gurnee, IL": 4.13,
+            "Libertyville, IL": 11.14,
+            "Highland Park, IL": 13.55
+        },
+        "Gurnee, IL": {
+            "Waukegan, IL": 4.13,
+            "Libertyville, IL": 8.09,
+            "Vernon Hills, IL": 12.26,
+            "Mundelein, IL": 11.38
+        },
+        "Libertyville, IL": {
+            "Waukegan, IL": 11.14,
+            "Gurnee, IL": 8.09,
+            "Vernon Hills, IL": 4.21,
+            "Mundelein, IL": 3.56
+        },
+        "Mundelein, IL": {
+            "Libertyville, IL": 3.56,
+            "Vernon Hills, IL": 3.53,
+            "Gurnee, IL": 11.38
+        },
+        "Vernon Hills, IL": {
+            "Gurnee, IL": 12.26,
+            "Libertyville, IL": 4.21,
+            "Mundelein, IL": 3.53
+        },
+        "Naperville, IL": {
+            "Wheaton, IL": 8.05,
+            "Downers Grove, IL": 7.65,
+            "Aurora, IL": 9.31
+        },
+        "Aurora, IL": {
+            "Naperville, IL": 9.31,
+            "Wheaton, IL": 18.77,
+            "Downers Grove, IL": 21.62
+        },
+        "Wheaton, IL": {
+            "Naperville, IL": 8.05,
+            "Aurora, IL": 18.77,
+            "Downers Grove, IL": 9.8,
+            "Schaumburg, IL": 13.16
+        },
+        "Downers Grove, IL": {
+            "Naperville, IL": 7.65,
+            "Aurora, IL": 21.62,
+            "Wheaton, IL": 9.8,
+            "Elk Grove Village, IL": 17.14
         }
     }
 }
