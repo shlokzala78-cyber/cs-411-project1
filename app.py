@@ -49,7 +49,7 @@ CONCEPT_NOTES = {
 
 @app.route('/')
 def index():
-    nodes = list(graph['locations'].keys())
+    nodes = list(graph['nodes'].keys())
     return render_template('index.html', nodes=nodes, graph_data=graph)
 
 @app.route('/search', methods=['POST'])
@@ -74,7 +74,7 @@ def search():
     if not path:
         return jsonify({"error": "No path found."})
         
-    path_coords = [{"lat": graph['locations'][node]['lat'], "lon": graph['locations'][node]['lon']} for node in path]
+    path_coords = [{"lat": graph['nodes'][node]['lat'], "lon": graph['nodes'][node]['lon']} for node in path]
     
     return jsonify({
         "path": path,
