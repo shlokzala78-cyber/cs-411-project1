@@ -1,0 +1,186 @@
+{
+    "nodes": {
+        "Chicago, IL": {
+            "lat": 41.8755616,
+            "lon": -87.6244212
+        },
+        "Evanston, IL": {
+            "lat": 42.0470043,
+            "lon": -87.6846053
+        },
+        "Skokie, IL": {
+            "lat": 42.0262972,
+            "lon": -87.7521069
+        },
+        "Des Plaines, IL": {
+            "lat": 42.0415823,
+            "lon": -87.8873916
+        },
+        "Rosemont, IL": {
+            "lat": 41.9941334,
+            "lon": -87.8756737
+        },
+        "Oak Park, IL": {
+            "lat": 41.8878145,
+            "lon": -87.7887615
+        },
+        "Cicero, IL": {
+            "lat": 41.8455398,
+            "lon": -87.7540199
+        },
+        "Berwyn, IL": {
+            "lat": 41.8505874,
+            "lon": -87.7936685
+        },
+        "Elmhurst, IL": {
+            "lat": 41.8994745,
+            "lon": -87.9403418
+        },
+        "Lombard, IL": {
+            "lat": 41.8864687,
+            "lon": -88.0201536
+        },
+        "Downers Grove, IL": {
+            "lat": 41.7936822,
+            "lon": -88.0102281
+        },
+        "Naperville, IL": {
+            "lat": 41.7728699,
+            "lon": -88.1479278
+        },
+        "Aurora, IL": {
+            "lat": 41.7571701,
+            "lon": -88.3147539
+        },
+        "Joliet, IL": {
+            "lat": 41.5263603,
+            "lon": -88.0840212
+        },
+        "Orland Park, IL": {
+            "lat": 41.630663,
+            "lon": -87.8536288
+        },
+        "Tinley Park, IL": {
+            "lat": 41.5733669,
+            "lon": -87.7844944
+        },
+        "Oak Lawn, IL": {
+            "lat": 41.7108662,
+            "lon": -87.7581081
+        },
+        "Schaumburg, IL": {
+            "lat": 42.0333608,
+            "lon": -88.083406
+        },
+        "Elgin, IL": {
+            "lat": 42.03726,
+            "lon": -88.2810994
+        },
+        "Waukegan, IL": {
+            "lat": 42.3602273,
+            "lon": -87.8318164
+        }
+    },
+    "edges": {
+        "Chicago, IL": {
+            "Evanston, IL": 22699,
+            "Skokie, IL": 23140,
+            "Des Plaines, IL": 32342.1
+        },
+        "Evanston, IL": {
+            "Skokie, IL": 8017,
+            "Des Plaines, IL": 19394.1,
+            "Rosemont, IL": 20749.8
+        },
+        "Skokie, IL": {
+            "Des Plaines, IL": 11903.3,
+            "Rosemont, IL": 12916.1,
+            "Oak Park, IL": 20283.9
+        },
+        "Des Plaines, IL": {
+            "Rosemont, IL": 6516.9,
+            "Oak Park, IL": 22107.9,
+            "Cicero, IL": 39226.9
+        },
+        "Rosemont, IL": {
+            "Oak Park, IL": 17553.6,
+            "Cicero, IL": 25032.6,
+            "Berwyn, IL": 21117.8
+        },
+        "Oak Park, IL": {
+            "Cicero, IL": 7635.8,
+            "Berwyn, IL": 4567.9,
+            "Elmhurst, IL": 16969.5
+        },
+        "Cicero, IL": {
+            "Berwyn, IL": 3915.1,
+            "Elmhurst, IL": 21262.5,
+            "Lombard, IL": 27115.5
+        },
+        "Berwyn, IL": {
+            "Elmhurst, IL": 17257.1,
+            "Lombard, IL": 23110.2,
+            "Downers Grove, IL": 23054.3
+        },
+        "Elmhurst, IL": {
+            "Lombard, IL": 8105,
+            "Downers Grove, IL": 17145.4,
+            "Naperville, IL": 28148.1
+        },
+        "Lombard, IL": {
+            "Downers Grove, IL": 11094.3,
+            "Naperville, IL": 20974.4,
+            "Aurora, IL": 38273.4
+        },
+        "Downers Grove, IL": {
+            "Naperville, IL": 12310.9,
+            "Aurora, IL": 27030.7,
+            "Joliet, IL": 40891.9
+        },
+        "Naperville, IL": {
+            "Aurora, IL": 14975.6,
+            "Joliet, IL": 30984.8,
+            "Orland Park, IL": 39047.9
+        },
+        "Aurora, IL": {
+            "Joliet, IL": 36182.8,
+            "Orland Park, IL": 53212.5,
+            "Tinley Park, IL": 69770.7
+        },
+        "Joliet, IL": {
+            "Orland Park, IL": 31697.2,
+            "Tinley Park, IL": 31539.4,
+            "Oak Lawn, IL": 49755.3
+        },
+        "Orland Park, IL": {
+            "Tinley Park, IL": 12258.1,
+            "Oak Lawn, IL": 15373.1,
+            "Schaumburg, IL": 60397.5
+        },
+        "Tinley Park, IL": {
+            "Oak Lawn, IL": 19920.1,
+            "Schaumburg, IL": 69054.7,
+            "Elgin, IL": 81979.2
+        },
+        "Oak Lawn, IL": {
+            "Schaumburg, IL": 56003.6,
+            "Elgin, IL": 68928.2,
+            "Waukegan, IL": 91093.9
+        },
+        "Schaumburg, IL": {
+            "Elgin, IL": 23327.8,
+            "Waukegan, IL": 62043.5,
+            "Chicago, IL": 51397
+        },
+        "Elgin, IL": {
+            "Waukegan, IL": 66036.6,
+            "Chicago, IL": 65951.7,
+            "Evanston, IL": 54792.1
+        },
+        "Waukegan, IL": {
+            "Chicago, IL": 66166.4,
+            "Evanston, IL": 45496.3,
+            "Skokie, IL": 44323.8
+        }
+    }
+}
