@@ -22,8 +22,8 @@
 ---
 
 ## Section 2: Map Graph Configuration
-- **Total Cities Configured:** 20
-- **Total Connection Edges:** 60
+- **Total Cities Configured:** 22
+- **Total Connection Edges:** 29
 - **Graph Fully Connected:** Yes
 
 ---
