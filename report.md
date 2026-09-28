@@ -48,8 +48,8 @@
 
 ## Section 5: Discussion
 - **Which search algorithm is best for this route finding problem?** 
-    [Write your answer here]
-- **Search Efficiency (Nodes expanded/time taken comparison):** [Write your answer here comparing search efficiency in terms of number of nodes visited and runtime across different algorithms]
+    A* is the best one for this project. Because the road network has varying driving distances and known geographic coordinates, A* calculates the optimal route by using the far-fetched path costs and a straight-line heuristic. UCS correctly calculates the most optimal path cost, but it expands many nodes in the process. Greedy can get lucky sometimes as it aggressively follows the straight-line heuristic, but only sees the initial path cost.
+- **Search Efficiency (Nodes expanded/time taken comparison):** 
 - **Link the idea of search algorithm to today Generative AI.** 
-    [Write your answer here]
+    The state space graph represents cities, and the task is to produce a sequence of nodes forming the optimal path. In Generative AI (LLMs), the state space is a massive probabilistic web of vocabulary. When a language model produces a sentence, it is in a sense conducting a search algorithm in order to select the optimal path of words (tokens). Actually, LLMs often use Beam Search, which is basically a more evolved version of the search algorithms that we have implemented.
 
